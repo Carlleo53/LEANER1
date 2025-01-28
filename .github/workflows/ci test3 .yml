@@ -1,0 +1,36 @@
+
+
+name: github classwork1
+
+
+on:
+  
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+  
+  workflow_dispatch:
+
+
+jobs:
+  
+  build:
+   
+    runs-on: ubuntu-latest
+
+   
+    steps:
+     
+      - uses: actions/checkout@v4
+
+      
+      - name: introduction
+        run: echo My favourite food is jollof rice 
+
+      
+      - name: Run a multi-line script
+        run: I still like jollof rice
+          echo Add other actions to build,
+          echo test, and deploy your project.
