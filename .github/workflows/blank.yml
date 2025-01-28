@@ -1,0 +1,30 @@
+
+
+name: github-hosted-pipeline2
+
+
+on:
+  
+    
+    push:
+     branches:
+      -main
+    
+      
+      workflow_dispatch:
+      
+      
+      job1:
+
+      build:
+      
+      runs-on: ubuntu-latest
+     
+      
+      steps:
+      -uses: actions/checkout@v4.2.2
+      -name: introductuion
+      
+      
+      run echo: my favourite food is jollof rice
+      shell: bash
